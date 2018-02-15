@@ -40,6 +40,7 @@ namespace Tuples_00
 
         public (int avg, int cnt, bool threshold) GetAvgAndCount(int[] scores, int threshold)
         {
+            
             var info = (avg: 0, count: 0, subAve: true);
             info = (scores.Sum() / scores.Count(), scores.Count(), info.avg.IsBelowAvg(threshold));
             return info;
