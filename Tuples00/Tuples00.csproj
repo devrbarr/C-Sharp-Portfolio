@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1DDE7A88-5B76-4145-98F5-26136FF6EF8F}</ProjectGuid>
+    <ProjectGuid>{BB566E8B-346D-42A1-82E0-F9A857319A77}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Pattern_Matching___00</RootNamespace>
-    <AssemblyName>Pattern Matching - 00</AssemblyName>
+    <RootNamespace>Tuples00</RootNamespace>
+    <AssemblyName>Tuples00</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
