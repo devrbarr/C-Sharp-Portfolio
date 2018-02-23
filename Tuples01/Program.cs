@@ -20,8 +20,8 @@ namespace Tuples01
 
             int[] scores = { 17, 46, 39, 62, 81, 79, 52, 24 };
             GradingUtils utils = new GradingUtils();
-            //var s = ch1.GetAvgAndCount(scores);
-            //var (average, count) = ch1.GetAvgAndCount(scores);
+            //var s = utils.GetAvgAndCount(scores);
+            //var (average, count) = utils.GetAvgAndCount(scores);
             var (average, count, threshold) = utils.GetAvgAndCount(scores, 51);
             //WriteLine($"Avg score as {s.avg } and number of students is {s.count}.");
 

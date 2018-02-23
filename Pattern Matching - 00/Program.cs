@@ -16,7 +16,10 @@ namespace Pattern_Matching___00
             //01: A good mix of stuff
             //object[] stuff = { 5, 0b11111111_11111111_000000000_00000000, false, "some text", 101, 7, false, new StringBuilder() };
             //02: A better mix of stuff
-            object[] stuff = { 5, 0b11111111_11111111_000000000_00000000, new object[] { 99,991, "string 1", "string 2", 992, new object[] {1_000,1_001, 1_002 }, 993}, false, "some text", 101, 7, false, new StringBuilder() };
+            object[] stuff = { 5, 0b11111111_11111111_000000000_00000000,
+                new object[] { 99,991, "string 1", "string 2", 992,
+                    new object[] {1_000,1_001, 1_002 }, 993},
+                false, "some text", 101, 7, false, new StringBuilder() };
             //PatternMatching00(stuff);
             PatternMatching01(stuff);
             ReadLine();
@@ -28,17 +31,18 @@ namespace Pattern_Matching___00
             foreach(var thing in stuff)
             {
                 //old style
-                //if(thing is int)
+                //if (thing is int)
                 //{
                 //    var newThing = (int)thing; // or var newThing = thing as int
                 //    Console.WriteLine($"{newThing} is an int.");
                 //}
 
                 // Using Pattern Matching and the imporved *is* expression
-                if(thing is int i)
+                if (thing is int i)
                 {
                     WriteLine($"{i} is an int");
-                }else if(thing is IEnumerable<object> moreStuff)
+                }
+                else if (thing is IEnumerable<object> moreStuff)
                 {
                     PatternMatching00(moreStuff);
                 }

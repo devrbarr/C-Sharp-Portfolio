@@ -19,14 +19,14 @@ namespace Numeric_Literals_00
             var b2 = 0b10101000;
 
             var host1 = 0b11111111_00000000_00000000_00001010;
-            var host2 = 0b11111111_00000000_00000000_00000101;
+            var host2 = 0b11111111_10101000_00000000_00000101;
 
 
             WriteLine($"old way: {num1} \nnew way: {num2} ");
             WriteLine("\n");
             WriteLine($"b1 to base 10: { (int)b1 } \nb2 to base 10: {(int)b2}");
             WriteLine("\n");
-            WriteLine($"These two hosts are { (new IPFun().SameSubnet(host1, host2, IPFun.IPv4Class.A) ? "on" : "not")} the same subnet.");
+            WriteLine($"These two hosts are { (new IPFun().SameSubnet(host1, host2, IPFun.IPv4Class.C) ? "on" : "not")} the same subnet.");
             ReadLine();
             
         }

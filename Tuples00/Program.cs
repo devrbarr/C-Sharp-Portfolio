@@ -13,7 +13,7 @@ namespace Tuples00
         static void Main(string[] args)
         {
             /*************** General Stuff About Tuples: AKA Fun with Tubles :-) :-> :-| ***************/
-            // 00: Tuble literal with nunamed elements
+            // 00: Tuple literal with nunamed elements
 
             var Emp1 = (101, "Bob", "Smith", "Tech Writer 3", true);
 
@@ -29,7 +29,7 @@ namespace Tuples00
 
             var Emp3 = (Id: 105, FirstName: "Joel", LastName: "Londagard", JobTitle: "Business Systems Consultant", ActiveEmpoyee: true);
             WriteLine($"{Emp3.FirstName + " " + Emp3.LastName} is a {Emp3.Item4}"); // Notice "Item4" <T> is not listed in the intellisense but is still available.
-
+        
             // 03: Arrays
 
             (string name, int stars)[] Drummers = { ("Vinnie", 5), ("Phil Collins", 3), ("Stuart Copeland", 5), ("Trey Cool", 1) };
